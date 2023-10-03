@@ -1,0 +1,9 @@
+def read_sentence(sentence):
+  """Reads a sentence, which ends with a period, character by character."""
+
+  sentence = ""
+  character = sentence[0]
+  while character != ".":
+    sentence += character
+    character = sentence[sentence.index(character) + 1]
+  return sentence
